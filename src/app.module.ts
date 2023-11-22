@@ -7,7 +7,7 @@ import { ItemTypesModule } from './item-types/item-types.module'
 import { JobsModule } from './jobs/jobs.module'
 import { ItemSetsModule } from './item-sets/item-sets.module'
 import { ElementsModule } from './elements/elements.module'
-import { BreedsModule } from './breeds/breeds.module'
+import { AvatarsModule } from './avatars/avatars.module'
 
 @Module({
   imports: [
@@ -17,7 +17,7 @@ import { BreedsModule } from './breeds/breeds.module'
     JobsModule,
     ItemSetsModule,
     ElementsModule,
-    BreedsModule,
+    AvatarsModule,
   ],
   controllers: [AppController],
   providers: [AppService],
