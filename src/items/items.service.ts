@@ -10,8 +10,4 @@ export class ItemsService {
   findOne(id: number) {
     return data.items.find((item) => item.id == id)
   }
-
-  findAllRarities() {
-    return data.itemRarities
-  }
 }

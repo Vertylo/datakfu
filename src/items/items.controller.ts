@@ -15,13 +15,3 @@ export class ItemsController {
     return this.itemsService.findOne(+id)
   }
 }
-
-@Controller('item-rarities')
-export class ItemRaritiesController {
-  constructor(private readonly itemsService: ItemsService) {}
-
-  @Get()
-  findAll() {
-    return this.itemsService.findAllRarities()
-  }
-}
