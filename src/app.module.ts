@@ -6,6 +6,7 @@ import { ItemRaritiesModule } from './item-rarities/item-rarities.module'
 import { ItemTypesModule } from './item-types/item-types.module'
 import { JobsModule } from './jobs/jobs.module'
 import { ItemSetsModule } from './item-sets/item-sets.module'
+import { ElementsModule } from './elements/elements.module'
 
 @Module({
   imports: [
@@ -14,6 +15,7 @@ import { ItemSetsModule } from './item-sets/item-sets.module'
     ItemTypesModule,
     JobsModule,
     ItemSetsModule,
+    ElementsModule,
   ],
   controllers: [AppController],
   providers: [AppService],
