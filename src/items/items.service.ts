@@ -1,13 +1,16 @@
-import { Injectable } from '@nestjs/common'
+import { Injectable, NotFoundException } from '@nestjs/common'
+import { Item } from 'src/entities/item'
 import { data } from 'src/main'
 
 @Injectable()
 export class ItemsService {
-  findAll() {
+  findAll(): [Item] {
     return data.items
   }
 
-  findOne(id: number) {
-    return data.items.find((item) => item.id == id)
+  findOne(id: number): Item {
+    const elem = data.items.find((item) => item.id == id)
+    if (!elem) throw new NotFoundException()
+    return elem
   }
 }
