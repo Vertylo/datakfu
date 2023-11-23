@@ -5,6 +5,7 @@ import { ItemRarity } from './item-rarity'
 import { ItemSet } from './item-set'
 import { ItemType } from './item-type'
 import { Job } from './job'
+import { Monster } from './monster'
 
 export class WakData {
   avatars: [Avatar]
@@ -14,4 +15,5 @@ export class WakData {
   itemSets: [ItemSet]
   itemTypes: [ItemType]
   jobs: [Job]
+  monsters: [Monster]
 }
