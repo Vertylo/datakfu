@@ -1,10 +1,10 @@
 import { ApiProperty } from '@nestjs/swagger'
 
 export class ItemType {
-  @ApiProperty()
+  @ApiProperty({ type: Number })
   id: number
-  @ApiProperty()
+  @ApiProperty({ type: [String] })
   name: [string]
-  @ApiProperty()
+  @ApiProperty({ type: Number })
   parentId: number
 }

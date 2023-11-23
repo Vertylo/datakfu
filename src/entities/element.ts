@@ -1,8 +1,8 @@
 import { ApiProperty } from '@nestjs/swagger'
 
 export class Element {
-  @ApiProperty()
+  @ApiProperty({ type: Number })
   id: number
-  @ApiProperty()
+  @ApiProperty({ type: [String] })
   name: [string]
 }

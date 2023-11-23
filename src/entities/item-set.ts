@@ -1,12 +1,12 @@
 import { ApiProperty } from '@nestjs/swagger'
 
 export class ItemSet {
-  @ApiProperty()
+  @ApiProperty({ type: Number })
   id: number
-  @ApiProperty()
+  @ApiProperty({ type: [String] })
   name: [string]
   @ApiProperty({ type: [Number] })
   itemsId: [number]
-  @ApiProperty()
+  @ApiProperty({ type: Number })
   referenceId: number
 }

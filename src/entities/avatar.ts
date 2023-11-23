@@ -1,9 +1,9 @@
 import { ApiProperty } from '@nestjs/swagger'
 
 export class Avatar {
-  @ApiProperty()
+  @ApiProperty({ type: Number })
   id: number
-  @ApiProperty()
+  @ApiProperty({ type: [String] })
   name: [string]
   @ApiProperty({ type: [Number] })
   spellElements: [number]
